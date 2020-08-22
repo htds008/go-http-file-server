@@ -1,4 +1,4 @@
-package assert
+package asset
 
 const mainCss = `
 html, body {
@@ -265,6 +265,14 @@ text-align: center;
 margin: 1em;
 padding: 1em;
 background: #ffc;
+}
+@media only screen and (max-width: 375px) {
+.item-list .header .time {
+width: 4.05em;
+}
+.item-list .detail .time span {
+display: none;
+}
 }
 @media only screen and (max-width: 350px) {
 .item-list .detail .time {
